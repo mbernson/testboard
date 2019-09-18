@@ -13,6 +13,11 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+// Route::middleware(['auth:api'])->group(function () {
+    // Route::post('/projects/{project}/apps/{app}/submissions', function (Request $request) {
+    //     return $request->user();
+    // });
+
+    // Route::apiResource('projects.apps.submissions', 'SubmissionController')->only(['store']);
+Route::any('/projects/{project}/apps/{app}/submissions', 'SubmissionController@store');
+// });

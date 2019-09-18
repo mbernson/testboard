@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='All' tests='108' failures='11'>
+  <testsuite name='PostNLUITests - iPhone 8 - 12.4' tests='108' failures='11'>
+    <testcase classname='Receive - iPhone 8 - 12.4' name='testShipments()' time='15.91'/>
+    <testcase classname='Shipments - iPhone 8 - 12.4' name='testRerouteNotAvailable()' time='12.96'>
+      <failure>
+        Assertion Failure: Shipments.swift:179: XCTAssertTrue failed
+      </failure>
+    </testcase>
+    <testcase classname='Shipments - iPhone 8 - 12.4' name='testFoodPhase3()' time='15.76'/>
+    <testcase classname='Shipments - iPhone 8 - 12.4' name='testExtraInformation()' time='14.85'/>
+    <testcase classname='Shipments - iPhone 8 - 12.4' name='testDeliveredAtServicePoint()' time='14.87'>
+        <skipped></skipped>
+    </testcase>
+    <testcase classname='Shipments - iPhone 8 - 12.4' name='testLetterboxParcelPhase4()' time='14.65'/>
+    <testcase classname='Shipments - iPhone 8 - 12.4' name='testDeliveredAtReturn()' time='14.85'/>
+    <testcase classname='Shipments - iPhone 8 - 12.4' name='testReroute()' time='15.93'/>
+    <testcase classname='Shipments - iPhone 8 - 12.4' name='testInternational()' time='14.56'/>
+    <testcase classname='Shipments - iPhone 8 - 12.4' name='testFoodPhase2()' time='14.80'/>
+    <testcase classname='Shipments - iPhone 8 - 12.4' name='testNotificationAvailable()' time='14.63'/>
+    <testcase classname='Shipments - iPhone 8 - 12.4' name='testParcelPhase4RetailDelivery()' time='14.35'/>
+    <testcase classname='Shipments - iPhone 8 - 12.4' name='testDeliveredAtRecipient()' time='15.51'/>
+    <testcase classname='Shipments - iPhone 8 - 12.4' name='testDeliveryDateNotifications()' time='15.05'/>
+    <testcase classname='Shipments - iPhone 8 - 12.4' name='testWeight()' time='14.83'/>
+    <testcase classname='Shipments - iPhone 8 - 12.4' name='testDimensions()' time='14.35'/>
+    <testcase classname='Shipments - iPhone 8 - 12.4' name='testDeliveryDateTooLateMessage()' time='15.09'/>
+    <testcase classname='Shipments - iPhone 8 - 12.4' name='testParcelPhase4NeighbourDelivery()' time='14.88'/>
+    <testcase classname='Shipments - iPhone 8 - 12.4' name='testSignature()' time='14.45'/>
+    <testcase classname='Shipments - iPhone 8 - 12.4' name='testBaseline()' time='15.08'/>
+    <testcase classname='Shipments - iPhone 8 - 12.4' name='testFoodPhase1()' time='14.66'/>
+    <testcase classname='Shipments - iPhone 8 - 12.4' name='testLetterboxParcelPhase1()' time='14.92'/>
+    <testcase classname='Shipments - iPhone 8 - 12.4' name='testCanReturnAtRetail()' time='14.44'>
+      <failure>
+        Assertion Failure: Shipments.swift:338: XCTAssertTrue failed
+      </failure>
+    </testcase>
+    <testcase classname='Shipments - iPhone 8 - 12.4' name='testTripInformation()' time='15.14'/>
+    <testcase classname='Shipments - iPhone 8 - 12.4' name='testLetterboxParcelPhase3()' time='14.72'/>
+    <testcase classname='Shipments - iPhone 8 - 12.4' name='testDeliveredAtMailBox()' time='14.69'/>
+    <testcase classname='Shipments - iPhone 8 - 12.4' name='testDeliveredAtRerouted()' time='16.02'/>
+    <testcase classname='Shipments - iPhone 8 - 12.4' name='testLetterboxParcelPhase2()' time='14.93'/>
+    <testcase classname='Shipments - iPhone 8 - 12.4' name='testDeliveredAtCollect()' time='15.75'/>
+    <testcase classname='Shipments - iPhone 8 - 12.4' name='testParcelPhase2()' time='16.18'/>
+    <testcase classname='Shipments - iPhone 8 - 12.4' name='testPendingReturnAtRetail()' time='15.62'/>
+    <testcase classname='Shipments - iPhone 8 - 12.4' name='testParcelPhase4()' time='14.91'/>
+    <testcase classname='Shipments - iPhone 8 - 12.4' name='testParcelPhase1()' time='14.90'/>
+    <testcase classname='Shipments - iPhone 8 - 12.4' name='testDeliveryDate()' time='14.68'/>
+    <testcase classname='Shipments - iPhone 8 - 12.4' name='testDeliveredAtNeighbour()' time='15.60'/>
+    <testcase classname='Shipments - iPhone 8 - 12.4' name='testRerouteNotAvailableWithLink()' time='15.02'/>
+    <testcase classname='Shipments - iPhone 8 - 12.4' name='testParcelPhase3()' time='15.04'/>
+    <testcase classname='LoginTests - iPhone 8 - 12.4' name='testEmptyEmail()' time='11.65'/>
+    <testcase classname='LoginTests - iPhone 8 - 12.4' name='testInvalidEmail()' time='12.81'/>
+    <testcase classname='LoginTests - iPhone 8 - 12.4' name='testInvalidEmailPasswordCombination()' time='14.86'/>
+    <testcase classname='LoginTests - iPhone 8 - 12.4' name='testRevealPassword()' time='14.51'/>
+    <testcase classname='MyMailOverview - iPhone 8 - 12.4' name='testMyMailRemoveMultipleLetters()' time='23.64'/>
+    <testcase classname='MyMailOverview - iPhone 8 - 12.4' name='testMyMailOverviewImages()' time='22.36'/>
+    <testcase classname='MyMailOverview - iPhone 8 - 12.4' name='testMyMailOverviewCustomerLogo()' time='20.16'/>
+    <testcase classname='MyMailOverview - iPhone 8 - 12.4' name='testMyMailOverviewVisible()' time='19.81'/>
+    <testcase classname='MyMailOverview - iPhone 8 - 12.4' name='testMyMailOverviewUnreads()' time='20.28'/>
+    <testcase classname='MyMailOverview - iPhone 8 - 12.4' name='testMyMailOverviewDeliveryDates()' time='20.11'>
+      <failure>
+        Assertion Failure: MyMailOverview.swift:81: XCTAssertEqual failed: ("12 juni 2019") is not equal to ("12 juni")
+      </failure>
+    </testcase>
+    <testcase classname='MyMailOverview - iPhone 8 - 12.4' name='testMyMailOverviewCallsToAction()' time='20.50'/>
+    <testcase classname='MyMailOverview - iPhone 8 - 12.4' name='testMyMailRemoveSingleLetter()' time='22.03'/>
+    <testcase classname='MyMailLetterDetail - iPhone 8 - 12.4' name='testNotAvailableSender()' time='21.18'/>
+    <testcase classname='MyMailLetterDetail - iPhone 8 - 12.4' name='testAvailableCTAOpenUrl()' time='25.83'>
+      <failure>
+        Assertion Failure: MyMailLetterDetail.swift:198: Error getting main window kAXErrorServerNotFound
+      </failure>
+    </testcase>
+    <testcase classname='MyMailLetterDetail - iPhone 8 - 12.4' name='testFaq()' time='27.56'/>
+    <testcase classname='MyMailLetterDetail - iPhone 8 - 12.4' name='testAvailableShare()' time='21.34'/>
+    <testcase classname='MyMailLetterDetail - iPhone 8 - 12.4' name='testAvailableCTAAddToCalendar()' time='22.13'/>
+    <testcase classname='MyMailLetterDetail - iPhone 8 - 12.4' name='testFaqShortcut()' time='21.32'/>
+    <testcase classname='MyMailLetterDetail - iPhone 8 - 12.4' name='testAvailableAgendaInfo()' time='21.60'/>
+    <testcase classname='MyMailLetterDetail - iPhone 8 - 12.4' name='testDelete()' time='22.81'/>
+    <testcase classname='MyMailLetterDetail - iPhone 8 - 12.4' name='testNotAvailableShare()' time='21.84'/>
+    <testcase classname='MyMailLetterDetail - iPhone 8 - 12.4' name='testNotAvailableCTA()' time='23.36'/>
+    <testcase classname='MyMailLetterDetail - iPhone 8 - 12.4' name='testAvailableImage()' time='23.13'/>
+    <testcase classname='MyMailLetterDetail - iPhone 8 - 12.4' name='testDeliveryDate()' time='26.17'>
+      <failure>
+      </failure>
+    </testcase>
+    <testcase classname='MyMailLetterDetail - iPhone 8 - 12.4' name='testAvailableSender()' time='27.49'>
+      <failure>
+      </failure>
+    </testcase>
+    <testcase classname='MyMailLetterDetail - iPhone 8 - 12.4' name='testNotAvailableImage()' time='27.43'>
+      <failure>
+      </failure>
+    </testcase>
+    <testcase classname='MyMailLetterDetail - iPhone 8 - 12.4' name='testNavigation()' time='26.80'>
+      <failure>
+      </failure>
+    </testcase>
+    <testcase classname='MyMailRegistration - iPhone 8 - 12.4' name='testMyMailWithRoommates()' time='29.64'>
+      <failure>
+      </failure>
+    </testcase>
+    <testcase classname='MyMailRegistration - iPhone 8 - 12.4' name='testMyMailHouseholdNotNow()' time='28.77'>
+      <failure>
+      </failure>
+    </testcase>
+    <testcase classname='MyMailCarousel - iPhone 8 - 12.4' name='testMyMailCarousel()' time='26.73'>
+      <failure>
+      </failure>
+    </testcase>
+    <testcase classname='PrivacyFilterTests - iPhone 8 - 12.4' name='testKGObfuscation()' time='0.00'/>
+    <testcase classname='PrivacyFilterTests - iPhone 8 - 12.4' name='testLetterObfuscation()' time='0.00'/>
+    <testcase classname='PrivacyFilterTests - iPhone 8 - 12.4' name='testObfuscation()' time='0.00'/>
+    <testcase classname='DateExtensionTests - iPhone 8 - 12.4' name='testIsMoreThan24HoursAgo()' time='0.00'/>
+    <testcase classname='FormatterTests - iPhone 8 - 12.4' name='testFormatter()' time='0.01'/>
+    <testcase classname='FormatterTests - iPhone 8 - 12.4' name='testTodayTomorrowFormatting()' time='0.01'/>
+    <testcase classname='RefreshServiceTests - iPhone 8 - 12.4' name='testRefreshShouldWorkWhenCalledOnce()' time='0.03'/>
+    <testcase classname='RefreshServiceTests - iPhone 8 - 12.4' name='testPromiseShouldSucceedWhenHttpCallSucceeds()' time='0.01'/>
+    <testcase classname='RefreshServiceTests - iPhone 8 - 12.4' name='testPromiseShouldFailWhenHttpCallFails()' time='0.01'/>
+    <testcase classname='RefreshServiceTests - iPhone 8 - 12.4' name='testRefreshShouldDiscardAllButLastResult()' time='0.03'/>
+    <testcase classname='MappingTests - iPhone 8 - 12.4' name='testOrderReceiverAddressHasFirstAndLastNameOrCompanyName()' time='0.00'/>
+    <testcase classname='AnalyticsProductTests - iPhone 8 - 12.4' name='testSingleProductWithAdditionalParameters()' time='0.00'/>
+    <testcase classname='AnalyticsProductTests - iPhone 8 - 12.4' name='testMultipleProductsAreGroupedTogether()' time='0.00'/>
+    <testcase classname='AnalyticsProductTests - iPhone 8 - 12.4' name='testSingleProduct()' time='0.00'/>
+    <testcase classname='ShipmentTests - iPhone 8 - 12.4' name='testShipmentReturnEligibility()' time='0.01'/>
+    <testcase classname='NSUserDefaultsPostNLTests - iPhone 8 - 12.4' name='testResolveLastUpgradedAppVersion()' time='0.00'/>
+    <testcase classname='ReceiveListTests - iPhone 8 - 12.4' name='testFiveOrMoreShipmentsReceivedInTwoWeeks()' time='0.01'/>
+    <testcase classname='AppStartupTests - iPhone 8 - 12.4' name='testCacheNotFlushedWhenAPIVersionIsUnchanged()' time='0.00'/>
+    <testcase classname='AppStartupTests - iPhone 8 - 12.4' name='testCacheFlushAfterAPIUpdate()' time='0.00'/>
+    <testcase classname='BarcodeTests - iPhone 8 - 12.4' name='testValidKGBarcodeParsedToCorrectCode()' time='0.00'/>
+    <testcase classname='BarcodeTests - iPhone 8 - 12.4' name='testValid3SBarcodeParsedToCorrectCode()' time='0.00'/>
+    <testcase classname='BarcodeTests - iPhone 8 - 12.4' name='testInvalidKGBarcodeParsedToOtherCode()' time='0.00'/>
+    <testcase classname='BarcodeTests - iPhone 8 - 12.4' name='testValid3SBarcodeParsedToCorrectPartyCode()' time='0.00'/>
+    <testcase classname='BarcodeTests - iPhone 8 - 12.4' name='testFormat3SBarcode()' time='0.01'/>
+    <testcase classname='BarcodeTests - iPhone 8 - 12.4' name='testInvalid3SBarcodeParsedToOtherCode()' time='0.00'/>
+    <testcase classname='BarcodeTests - iPhone 8 - 12.4' name='testFormatKGBarcode()' time='0.00'/>
+    <testcase classname='FormatterTests - iPhone 8 - 12.4' name='testBoldFormattingWithTwoBoldParts()' time='0.01'/>
+    <testcase classname='FormatterTests - iPhone 8 - 12.4' name='testBoldFormatting()' time='0.01'/>
+    <testcase classname='UpgradePerformerTests - iPhone 8 - 12.4' name='testWithoutAnyLogic()' time='0.00'/>
+    <testcase classname='UpgradePerformerTests - iPhone 8 - 12.4' name='testDowngrade()' time='0.00'/>
+    <testcase classname='UpgradePerformerTests - iPhone 8 - 12.4' name='testCompletionBlock()' time='0.00'/>
+    <testcase classname='UpgradePerformerTests - iPhone 8 - 12.4' name='testPartialUpgrade()' time='0.00'/>
+    <testcase classname='AppURLTests - iPhone 8 - 12.4' name='testLoginURLFromURLScheme()' time='0.02'/>
+    <testcase classname='AppURLTests - iPhone 8 - 12.4' name='testLoginURLFromUniversalLink()' time='0.00'/>
+    <testcase classname='AppURLTests - iPhone 8 - 12.4' name='testProcessPaymentURLFromURLScheme()' time='0.00'/>
+    <testcase classname='AppURLTests - iPhone 8 - 12.4' name='testMagicLinkURLFromURLScheme()' time='0.00'/>
+    <testcase classname='AppURLTests - iPhone 8 - 12.4' name='testShipmentURLFromUniversalLink()' time='0.01'/>
+    <testcase classname='AppURLTests - iPhone 8 - 12.4' name='testMagicLinkURLFromUniversalLink()' time='0.01'/>
+    <testcase classname='AppURLTests - iPhone 8 - 12.4' name='testShipmentURLFromURLScheme()' time='0.00'/>
+    <testcase classname='AppURLTests - iPhone 8 - 12.4' name='testPreparedOrderURLFromURLScheme()' time='0.00'/>
+    <testcase classname='AppURLTests - iPhone 8 - 12.4' name='testPreparedOrderURLFromUniversalLink()' time='0.00'/>
+  </testsuite>
+</testsuites>

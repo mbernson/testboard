@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="nl.postnl.app.extensions.ObservableExtensionsTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2019-09-16T23:07:19" hostname="prd-latest-usc1b-190916230011-ygptut6txsjjrqplxdfe78" time="7.365">
+  <properties/>
+  <testcase name="testWithErrorDialogCancellationException" classname="nl.postnl.app.extensions.ObservableExtensionsTest" time="0.284"/>
+  <testcase name="testWithErrorDialogWithErrorClose" classname="nl.postnl.app.extensions.ObservableExtensionsTest" time="3.129"/>
+  <testcase name="testWithErrorDialogWithErrorRetry" classname="nl.postnl.app.extensions.ObservableExtensionsTest" time="0.967"/>
+  <testcase name="testWithErrorDialogWithSuccess" classname="nl.postnl.app.extensions.ObservableExtensionsTest" time="0.119"/>
+  <testcase name="testProgressDialogSuccess" classname="nl.postnl.app.extensions.ObservableExtensionsTest" time="0.963"/>
+  <testcase name="testProgressDialogError" classname="nl.postnl.app.extensions.ObservableExtensionsTest" time="0.803"/>
+  <testcase name="testWithErrorDialogWithErrorCloseNoRetry" classname="nl.postnl.app.extensions.ObservableExtensionsTest" time="0.504"/>
+  <testcase name="testProgressDialogCancellation" classname="nl.postnl.app.extensions.ObservableExtensionsTest" time="0.594"/>
+  <system-out><![CDATA[[Robolectric] nl.postnl.app.extensions.ObservableExtensionsTest.testWithErrorDialogCancellationException: sdk=28; resources=BINARY
+[Robolectric] nl.postnl.app.extensions.ObservableExtensionsTest.testWithErrorDialogWithErrorClose: sdk=28; resources=BINARY
+[Robolectric] nl.postnl.app.extensions.ObservableExtensionsTest.testWithErrorDialogWithErrorRetry: sdk=28; resources=BINARY
+[Robolectric] nl.postnl.app.extensions.ObservableExtensionsTest.testWithErrorDialogWithSuccess: sdk=28; resources=BINARY
+[Robolectric] nl.postnl.app.extensions.ObservableExtensionsTest.testProgressDialogSuccess: sdk=28; resources=BINARY
+[Robolectric] nl.postnl.app.extensions.ObservableExtensionsTest.testProgressDialogError: sdk=28; resources=BINARY
+[Robolectric] nl.postnl.app.extensions.ObservableExtensionsTest.testWithErrorDialogWithErrorCloseNoRetry: sdk=28; resources=BINARY
+[Robolectric] nl.postnl.app.extensions.ObservableExtensionsTest.testProgressDialogCancellation: sdk=28; resources=BINARY
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -33,7 +33,19 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('projects.index') }}">{{ __('Projects') }}</a>
+                        </li>
+                        @if (isset($project))
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('projects.show', $project) }}">{{ $project->title }}</a>
+                            </li>
+                            @foreach ($project->apps as $app)
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('projects.apps.show', [$project, $app]) }}">{{ $app->title }}</a>
+                            </li>
+                            @endforeach
+                        @endif
                     </ul>
 
                     <!-- Right Side Of Navbar -->
