@@ -6,16 +6,29 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Projects</div>
-
-                <p>{{ $project->title }} -> {{ $app->title }} -> Submissions</p>
+                <div class="card-header">{{ $project->title }} &rarr; {{ $app->title }} &rarr; Submissions</div>
 
                 <div class="card-body">
-                    <ul>
+
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Created at</th>
+                        </tr>
+                        </thead>
+                        <tbody>
                         @foreach($submissions as $sub)
-                            <li>{{ $sub->created_at }}</a></li>
+                        <tr>
+                            <th scope="row">{{ $sub->getKey() }}</th>
+                            <td>{{ $sub->status }}</td>
+                            <td>{{ $sub->created_at }}</td>
+                        </tr>
                         @endforeach
-                    </ul>
+                        </tbody>
+                    </table>
+
                 </div>
             </div>
         </div>

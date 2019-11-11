@@ -40,9 +40,10 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('projects.show', $project) }}">{{ $project->title }}</a>
                             </li>
-                            @foreach ($project->apps as $app)
+
+                            @foreach ($project->apps as $_app)
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('projects.apps.show', [$project, $app]) }}">{{ $app->title }}</a>
+                                <a class="nav-link" href="{{ route('projects.apps.show', [$project, $_app]) }}">{{ $_app->title }}</a>
                             </li>
                             @endforeach
                         @endif

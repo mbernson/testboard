@@ -22,4 +22,9 @@ class Project extends Model
     {
         return $this->hasMany(Component::class);
     }
+
+    public function predicates()
+    {
+        return $this->hasMany(Predicate::class);
+    }
 }

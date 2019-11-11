@@ -8,8 +8,7 @@ class App extends Model
 {
     protected $fillable = ['title'];
 
-    public function project()
-    {
+    public function project() {
         return $this->belongsTo(Project::class);
     }
 

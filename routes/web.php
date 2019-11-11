@@ -11,15 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::redirect('/', '/projects');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-
-// Route::middleware(['auth'])->group(function () {
+Route::middleware(['auth'])->group(function () {
 
     Route::resource('projects', 'ProjectController');
     Route::resource('projects.apps', 'AppController');
@@ -28,4 +24,4 @@ Route::get('/home', 'HomeController@index')->name('home');
     Route::resource('projects.apps.submissions', 'SubmissionController');
     // Route::resource('projects.apps.results', 'ResultController');
 
-// });
+});

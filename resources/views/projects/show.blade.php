@@ -9,11 +9,9 @@
             <h1>{{ $project->title }}</h1>
 
             <ul>
-                <li><a href="{{ route('projects.apps.index', $project) }}">Apps</a></li>
-                <li><a href="{{ route('projects.components.index', $project) }}">Components</a></li>
+                <li><a href="{{ route('projects.apps.index', $project) }}">Apps ({{ $project->apps->count() }})</a></li>
+                <li><a href="{{ route('projects.components.index', $project) }}">Components ({{ $project->components->count() }})</a></li>
             </ul>
-
-            <p><a class="btn btn-primary" href="{{ route('projects.apps.create', [$project->getKey()]) }}">Create new app</a></p>
 
         </div>
     </div>

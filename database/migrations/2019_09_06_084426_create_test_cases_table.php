@@ -37,6 +37,9 @@ class CreateTestCasesTable extends Migration
             $table->unsignedBigInteger('app_id');
             $table->foreign('app_id')->references('id')->on('apps');
 
+            $table->unsignedBigInteger('component_id')->nullable();
+            $table->foreign('component_id')->references('id')->on('components');
+
             $table->unsignedBigInteger('submission_id');
             $table->foreign('submission_id')->references('id')->on('submissions');
 

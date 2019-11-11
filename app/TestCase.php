@@ -14,21 +14,18 @@ class TestCase extends Model
         'name',
         'time',
         'app_id',
-        // $table->string('result');
-        //     // $table->string('message')->nullable();
-
-        //     $table->string('suite');
-        //     $table->string('name');
-
-        //     $table->text('failureReason')->nullable();
-        //     $table->double('time');
-
-        //     $table->unsignedBigInteger('app_id');
+        'component_id',
     ];
+
     protected $table = 'test_cases';
 
     public function app()
     {
         return $this->belongsTo(App::class);
+    }
+
+    public function submission()
+    {
+        return $this->belongsTo(Submission::class);
     }
 }

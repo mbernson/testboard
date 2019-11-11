@@ -8,12 +8,12 @@
             <div class="card">
                 <div class="card-header">Projects</div>
 
-                <p><a class="btn btn-primary" href="{{ route('projects.create') }}">Create new project</a></p>
-
                 <div class="card-body">
+                    <p><a class="btn btn-primary" href="{{ route('projects.create') }}">Create new project</a></p>
+
                     <ul>
-                        @foreach($projects as $project)
-                            <li><a href="{{ route('projects.show', $project->getKey()) }}">{{ $project->title }}</a></li>
+                        @foreach($projects as $proj)
+                            <li><a href="{{ route('projects.show', $proj->getKey()) }}">{{ $proj->title }}</a></li>
                         @endforeach
                     </ul>
                 </div>
