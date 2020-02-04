@@ -4,48 +4,44 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * @property integer $id
+ * @property integer $project_id
+ * @property integer $component_id
+ * @property string $field
+ * @property string $operator
+ * @property string $value
+ * @property int $priority
+ * @property Component $component
+ * @property Project $project
+ */
 class Predicate extends Model
 {
-    public function matchesTestCase(TestCase $testCase): bool {
-        $field = $this->field;
-        $operator = $this->operator;
-        $value = $this->value;
+    /**
+     * The "type" of the auto-incrementing ID.
+     * 
+     * @var string
+     */
+    protected $keyType = 'integer';
 
-        switch ($field) {
-            case 'name':
-            case 'classname':
-            break;
-            default:
-                throw new \Exception("Invalid field name $field");
-        }
+    /**
+     * @var array
+     */
+    protected $fillable = ['project_id', 'component_id', 'field', 'operator', 'value', 'priority'];
 
-        switch ($operator) {
-            case 'equals':
-                return $testCase->$field == $value;
-
-            case 'contains':
-                return strpos($testCase->$field, $value) !== false;
-
-            default:
-                throw new \Exception("Invalid operator '$operator'");
-        }
-
-        // $table->unsignedBigInteger('app_id');
-        // $table->foreign('app_id')->references('id')->on('apps');
-
-        // $table->unsignedBigInteger('component_id');
-        // $table->foreign('component_id')->references('id')->on('components');
-
-        // $table->string('field')->default('name');
-        // $table->string('operator')->default('equals'); // Equals, contains, starts with, ends with, matches regex
-        // $table->string('value');
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function component()
+    {
+        return $this->belongsTo('App\Component');
     }
 
-    public function app() {
-        return $this->belongsTo(App::class);
-    }
-
-    public function component() {
-        return $this->belongsTo(Component::class);
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function project()
+    {
+        return $this->belongsTo('App\Project');
     }
 }
